@@ -21,7 +21,7 @@ public class PostClient {
         return restClient.get()
                 .uri("/posts")
                 .retrieve()
-                .body(new ParameterizedTypeReference<List<Post>>() {});
+                .body(new ParameterizedTypeReference<>() {});
 
     }
 }
